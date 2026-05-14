@@ -2,9 +2,8 @@
 # BACKEND — gdje CMS čuva podatke
 # ============================================================
 backend:
-  name: github                    # CMS koristi GitHub za čuvanje
-  repo: mirzag-web/fk-turbina  # ← PROMIJENI OVO na tvoj GitHub repo
-  branch: main                    # Grana s koje se deploya
+  name: git-gateway
+  branch: main
 
 # ============================================================
 # MEDIA — gdje se uploaduju slike kroz CMS
