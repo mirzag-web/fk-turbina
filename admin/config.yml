@@ -1,0 +1,121 @@
+# ============================================================
+# BACKEND — gdje CMS čuva podatke
+# ============================================================
+backend:
+  name: github                    # CMS koristi GitHub za čuvanje
+  repo: mirzag-web/fk-turbina  # ← PROMIJENI OVO na tvoj GitHub repo
+  branch: main                    # Grana s koje se deploya
+
+# ============================================================
+# MEDIA — gdje se uploaduju slike kroz CMS
+# ============================================================
+media_folder: "assets/img"        # Kamo se slike čuvaju u projektu
+public_folder: "/assets/img"      # Kamo putanja vodi u HTML-u
+
+# ============================================================
+# COLLECTIONS — šta CMS može uređivati
+# ============================================================
+collections:
+
+  # ----------------------------------------------------------
+  # KOLEKCIJA 1: UTAKMICA (fixture.json)
+  # Tip "files" = uređuje jedan specifičan fajl
+  # ----------------------------------------------------------
+  - name: "fixture"
+    label: "Naredna Utakmica"
+    files:
+      - name: "fixture"
+        label: "Podaci o utakmici"
+        file: "_data/fixture.json"  # ← Koji fajl uređujemo
+        fields:
+
+          # Svako "field" = jedno polje u admin formi
+          - label: "Kolo"
+            name: "round"
+            widget: "string"         # Jednostavno tekstualno polje
+            hint: "Npr: 21. Kolo"
+
+          - label: "Datum"
+            name: "date"
+            widget: "string"
+            hint: "Npr: 12.04.2026."
+
+          - label: "Vrijeme"
+            name: "time"
+            widget: "string"
+            hint: "Npr: 16:30h"
+
+          - label: "Ime protivnika"
+            name: "opponent_name"
+            widget: "string"
+            hint: "Npr: HNK Višići"
+
+          - label: "Grad protivnika"
+            name: "opponent_city"
+            widget: "string"
+
+          - label: "Lokacija utakmice"
+            name: "venue"
+            widget: "string"
+            hint: "Npr: Stadion Čaeri, Višići"
+
+          - label: "Rezultat"
+            name: "score"
+            widget: "string"
+            hint: "Unesi '- : -' ako nije odigrana, ili npr. '2 : 1'"
+            default: "- : -"
+
+          - label: "Pozicija na tabeli"
+            name: "table_position"
+            widget: "number"         # Numeričko polje
+            min: 1
+            max: 20
+
+  # ----------------------------------------------------------
+  # KOLEKCIJA 2: IGRAČI (players.json)
+  # Tip "files" s listom = uređuje niz u JSON fajlu
+  # ----------------------------------------------------------
+  - name: "players"
+    label: "Igrači"
+    files:
+      - name: "players"
+        label: "Roster igrača"
+        file: "_data/players.json"
+        fields:
+          # "list" widget = može dodavati/brisati/uređivati stavke
+          - label: "Igrači"
+            name: "."               # "." znači "root" fajla (jer je players.json niz)
+            widget: "list"
+            label_singular: "Igrač"
+            fields:
+              - label: "Broj dresa"
+                name: "number"
+                widget: "number"
+                min: 1
+                max: 99
+
+              - label: "Ime i prezime"
+                name: "name"
+                widget: "string"
+
+              - label: "Pozicija"
+                name: "position"
+                widget: "select"    # Dropdown — spriječava tipfelere
+                options:
+                  - "Golman"
+                  - "Desni bek"
+                  - "Lijevi bek"
+                  - "Centralni bek"
+                  - "Defanzivni vezni"
+                  - "Centralni vezni"
+                  - "Ofanzivni vezni"
+                  - "Desni krilni"
+                  - "Lijevi krilni"
+                  - "Napadač"
+
+              - label: "Fotografija igrača"
+                name: "photo"
+                widget: "image"     # Upload widget za slike
+                required: false
+                default: "/assets/img/footballer.webp"
+                hint: "Ostavi prazno za defaultnu sliku"

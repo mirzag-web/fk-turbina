@@ -1,0 +1,50 @@
+[
+  {
+    "number": 1,
+    "name": "Amar Husrep",
+    "position": "Golman",
+    "photo": "/assets/img/footballer.webp"
+  },
+  {
+    "number": 4,
+    "name": "Samir Trebović",
+    "position": "Centralni bek",
+    "photo": "/assets/img/footballer.webp"
+  },
+  {
+    "number": 2,
+    "name": "Haris Jogunović",
+    "position": "Centralni bek",
+    "photo": "/assets/img/footballer.webp"
+  },
+  {
+    "number": 3,
+    "name": "Maid Graho",
+    "position": "Desni bek",
+    "photo": "/assets/img/footballer.webp"
+  },
+  {
+    "number": 6,
+    "name": "Kasim Zahirović",
+    "position": "Vezni",
+    "photo": "/assets/img/footballer.webp"
+  },
+  {
+    "number": 5,
+    "name": "Haris Balavac",
+    "position": "Defanzivni vezni",
+    "photo": "/assets/img/footballer.webp"
+  },
+  {
+    "number": 8,
+    "name": "Harun Kero",
+    "position": "Centralni vezni",
+    "photo": "/assets/img/footballer.webp"
+  },
+  {
+    "number": 10,
+    "name": "Bakir Bašić",
+    "position": "Napadač",
+    "photo": "/assets/img/656320-1615221170.jpg"
+  }
+]

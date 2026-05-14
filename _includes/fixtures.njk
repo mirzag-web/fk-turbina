@@ -1,0 +1,59 @@
+<section class="fixtures" id="raspored">
+  <div class="sf-wrapper">
+ 
+    <header class="sf-header">
+      <span class="sf-label">Druga liga FBiH – Jug &nbsp;·&nbsp; Sezona 2025/26</span>
+      <h2 class="sf-headline">NAREDNA UTAKMICA</h2>
+    </header>
+ 
+    <div class="sf-main-match">
+
+      {# Dinamički datum — dolazi iz fixture.json #}
+      <div class="sf-match-date">
+        {{ fixture.round }} · {{ fixture.date }} · {{ fixture.time }}
+      </div>
+      
+      <div class="sf-teams">
+        <div class="sf-team sf-away">
+          {# Dinamičko ime protivnika #}
+          <span class="sf-team-name">{{ fixture.opponent_name }}</span>
+          <span class="sf-team-city">{{ fixture.opponent_city }}</span>
+        </div>
+        
+        <div class="sf-score">
+          <span class="sf-vs">VS</span>
+          {# Dinamički rezultat #}
+          <span class="sf-result">{{ fixture.score }}</span>
+        </div>
+        
+        <div class="sf-team sf-home">
+          <img src="/assets/img/logo.png" alt="FK Turbina" class="sf-badge">
+          <span class="sf-team-name">FK TURBINA</span>
+          <span class="sf-team-city">Jablanica</span>
+        </div>
+      </div>
+      
+      <div class="sf-venue">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/>
+        </svg>
+        {# Dinamička lokacija #}
+        {{ fixture.venue }}
+      </div>
+    </div>
+ 
+    <div class="sf-position-card">
+      <span class="sf-pos-label">Trenutna Pozicija</span>
+      <div class="sf-pos-data">
+        {# Dinamička pozicija na tabeli #}
+        <span class="sf-pos-number">{{ fixture.table_position }}.</span>
+        <span class="sf-pos-text">Mjesto</span>
+      </div>
+      <a href="https://www.nsfbih.ba/takmicenja/druga-liga-fbih-jug" target="_blank" class="sf-pos-link">
+        Kompletna tabela 
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+ 
+  </div>
+</section>

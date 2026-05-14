@@ -1,0 +1,295 @@
+---
+title: FK Turbina Jablanica
+---
+
+{% extends "_includes/base.njk" %}
+
+{% block content %}
+
+{# Hero sekcija — kopiraj direktno iz index.html, ne mijenja se #}
+<section class="hero-section" id="home">
+  <div class="hero-background-image">
+    <img src="/assets/img/120761228_3633706890015124_649256692512961189610_n.webp" 
+         fetchpriority="high" width="1440" height="799" 
+         alt="Stadion Salem Halilhodzic" class="hero-bg-img" aria-hidden="true">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content-wrapper">
+    <div class="hero-headline-block">
+      <h1 class="hero-headline">Dobro došli na službenu stranicu <br><span>FK Turbina Jablanica</span></h1>
+      <div class="hero-cta-group">
+        <a href="#raspored" class="cta-button cta-button--primary">REZULATATI I<br>RASPORED</a>
+        <a href="#team" class="cta-button cta-button--secondary">NAŠ TIM</a>
+      </div>
+    </div>
+    <div class="hero-logo">
+      <img src="/assets/img/logo.png" alt="Logo FK Turbina" width="1024" height="1024">
+    </div>
+  </div>
+</section>
+
+<main>
+
+  {# History sekcija — kopiraj direktno iz index.html (ne mijenja se) #}
+  <section class="history-section" id="about">
+     <header class="history-header">
+      <span class="red-bar"></span>
+      <span class="section-label">Osn. 1924 &nbsp;·&nbsp; Naša priča</span>
+      <h1>
+        <em>HISTORIJA FK TURBINA</em>
+      </h1>
+   
+    </header>
+ 
+    <article class="history-chapter">
+ 
+      <div class="chapter-text-col">
+        <h2 class="chapter-headline">RADNIČKI KLUB</h2>
+        <p class="chapter-subheadline"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><circle cx="256" cy="256" r="192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m256 175.15l-76.09 63.83L200 320h112l20.09-81.02zm76.09 63.83l52.87-22.4l25.78-73.26M447 269.97l-62.04-53.39m-205.05 22.4l-52.87-22.4l-25.78-73.26M65 269.97l62.04-53.39M256 175.15v-57.57l64-42.64m-128-.01l64 42.65M312 320l28 48l-28 71m98.74-71H342m-142-48l-28 48l28.37 71.5M101.63 368H172"/></svg> Osnovan kao ŠD "Fortuna"</p>
+        <p class="chapter-body">
+         FK Turbina Jablanica je fudbalski klub iz grada  <strong>Jablanica</strong>, koji ima dugu i značajnu tradiciju u lokalnom i regionalnom fudbalu. Klub je osnovan 1924. i od tada predstavlja važan sportski simbol grada, okupljajući generacije mladih igrača i navijača. Kroz svoju historiju, Turbina je bila mjesto razvoja talenata i centar sportskog života u Jablanici.
+          <br><br>
+          U periodu bivše Socialistička Federativna Republika Jugoslavija, FK Turbina je nastupala u nižim ligama jugoslavenskog fudbalskog sistema. Iako nije dostigla najviši rang takmičenja, klub je bio stabilan učesnik regionalnih liga, gdje je često ostvarivao zapažene rezultate. Ovaj period je bio ključan za izgradnju identiteta kluba i njegove baze navijača.
+        </p>
+        <div class="chapter-stats">
+          <div class="stat-item">
+            <span class="stat-number">1924</span>
+            <span class="stat-label">Osnivanje</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Osnivača</span>
+          </div>
+         
+        </div>
+      </div>
+ 
+      <div class="chapter-image-col">
+        <div class="photo-stack">
+          <img
+            class="chapter-photo"
+            src="assets/img/photo-1487466365202-1afdb86c764e.jpg" width="700" height="465" loading="lazy"
+            alt="Slika Stadiona"
+          />
+          <div class="photo-color-wash"></div>
+          <div class="photo-vignette"></div>
+          <div class="photo-grain"></div>
+        </div>
+      </div>
+ 
+    </article>
+ 
+    <article class="history-chapter image-first">
+ 
+      <div class="chapter-image-col">
+        <div class="photo-stack">
+          <img
+            class="chapter-photo"
+            src="assets/img/494086306_1255712366563903_5539186444409359096_n.webp" width="1920" loading="lazy" height="1280"
+            alt="Igrači FK Turbina"
+          />
+          <div class="photo-color-wash"></div>
+          <div class="photo-vignette"></div>
+          <div class="photo-grain"></div>
+        </div>
+      </div>
+ 
+      <div class="chapter-text-col">
+        <h2 class="chapter-headline">Poslijeratni period</h2>
+        <p class="chapter-subheadline"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><circle cx="256" cy="256" r="192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m256 175.15l-76.09 63.83L200 320h112l20.09-81.02zm76.09 63.83l52.87-22.4l25.78-73.26M447 269.97l-62.04-53.39m-205.05 22.4l-52.87-22.4l-25.78-73.26M65 269.97l62.04-53.39M256 175.15v-57.57l64-42.64m-128-.01l64 42.65M312 320l28 48l-28 71m98.74-71H342m-142-48l-28 48l28.37 71.5M101.63 368H172"/></svg>  Važnost kluba</p>
+        <p class="chapter-body">
+          U poslijeratnom periodu, Turbina se takmiči u ligama Bosna i Hercegovina, najčešće u nižim rangovima poput Druge lige Federacije BiH, a provela je i dvije sezone u Premijer ligi Bosne i Hercegovine. Klub se fokusira na razvoj mladih igrača i održavanje kontinuiteta takmičenja, uprkos finansijskim i organizacionim izazovima koji su česti u manjim sredinama.
+
+
+          <br><br>
+          Jedan od najvažnijih aspekata djelovanja FK Turbina je njegova uloga u zajednici. Klub okuplja djecu i omladinu iz Jablanice, pružajući im priliku za sportski razvoj i zdrav način života. Osim takmičarskog značaja, Turbina ima i važnu društvenu funkciju, jačajući zajedništvo i lokalni identitet.
+        </p>
+        <div class="chapter-stats">
+          <div class="stat-item">
+            <span class="stat-number">43</span>
+            <span class="stat-label">Broj sezona</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">2K</span>
+            <span class="stat-label">Kapacitet stadiona</span>
+          </div>
+          
+        </div>
+      </div>
+ 
+    </article>
+ 
+    <article class="history-chapter">
+ 
+      <div class="chapter-text-col">
+        <h2 class="chapter-headline">Tradicija i lokalni značaj</h2>
+        <p class="chapter-subheadline"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><circle cx="256" cy="256" r="192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m256 175.15l-76.09 63.83L200 320h112l20.09-81.02zm76.09 63.83l52.87-22.4l25.78-73.26M447 269.97l-62.04-53.39m-205.05 22.4l-52.87-22.4l-25.78-73.26M65 269.97l62.04-53.39M256 175.15v-57.57l64-42.64m-128-.01l64 42.65M312 320l28 48l-28 71m98.74-71H342m-142-48l-28 48l28.37 71.5M101.63 368H172"/></svg>  Počeci poznatih</p>
+        <p class="chapter-body">
+         Danas FK Turbina Jablanica ostaje simbol upornosti i ljubavi prema fudbalu. Iako ne spada među najpoznatije klubove u državi, njegova historija, kontinuitet i značaj za lokalnu zajednicu čine ga važnim dijelom sportskog naslijeđa Jablanice i Bosne i Hercegovine.
+          <br><br>
+         Imena poput Vahida Halilhodžića,Senada Lulića i Hasana Salihamidžića svoje su prve fudbalske korake napravili u FK Turbina, a identitet kluba se i danas zasniva na afirmaciji mladih igrača.
+        </p>
+        <div class="chapter-stats">
+          <div class="stat-item">
+            <span class="stat-number">1700+</span>
+            <span class="stat-label">Igrača</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">102</span>
+            <span class="stat-label">Godine historije</span>
+          </div>
+          
+        </div>
+      </div>
+ 
+      <div class="chapter-image-col">
+        <div class="photo-stack">
+          <img
+            class="chapter-photo"
+            src="assets/img/493939469_1255696739898799_5351619896801516253_n.webp"loading="lazy" width="1280" height="1920"
+            alt="Igrač FK Turbina"
+          />
+          <div class="photo-color-wash"></div>
+          <div class="photo-vignette"></div>
+          <div class="photo-grain"></div>
+        </div>
+      </div>
+ 
+    </article>
+  </section>
+
+  {# Fixtures sekcija — dolazi iz _includes/fixtures.njk #}
+  {% include "fixtures.njk" %}
+
+</main>
+
+{# Squad sekcija — dolazi iz _includes/squad.njk #}
+{% include "squad.njk" %}
+
+{# Tickets sekcija — kopiraj direktno iz index.html #}
+<section class="tickets-section">
+  <div class="tickets-wrapper">
+
+    <header class="tickets-header">
+      <span class="tickets-eyebrow">
+        Sezona 2025/26 &nbsp;·&nbsp; Ulaznice
+      </span>
+      <h2 class="tickets-headline">KAKO DO KARTE?</h2>
+    </header>
+
+    <div class="tickets-body">
+
+      <div class="tickets-images">
+        <div class="ticket-img-wrap ticket-img-wrap--back">
+          <img src="assets/img/493746118_1253908946744245_4890962042258264847_n222.webp" loading="lazy" alt="Ulaznica FK Turbina">
+        </div>
+        <div class="ticket-img-wrap ticket-img-wrap--front">
+          <img src="assets/img/493746118_1253908946744245_4890962042258264847_n111.webp" loading="lazy" alt="Ulaznica FK Turbina">
+        </div>
+      </div>
+
+      <div class="tickets-info">
+        <div class="tickets-info-card">
+          <div class="tickets-info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1.713-8.287Q13 8.425 13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9t.713-.288M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"/></svg>
+          </div>
+          <p class="tickets-info-text">Karte se mogu kupiti svakim radnim danom u prostorijama kluba.</p>
+        </div>
+
+        <div class="tickets-detail-row">
+          <div class="tickets-detail-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>
+            <span>Željezn. bb, Jablanica</span>
+          </div>
+          <div class="tickets-detail-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2M12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8m.5-13H11v6l5.25 3.15l.75-1.23l-4.5-2.67z"/></svg>
+            <span>Radnim danima</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div></section>
+
+{# Kontakt sekcija — kopiraj direktno iz index.html #}
+<section class="contact" id="kontakt">
+ <div class="contact-wrapper">
+ 
+    <header class="contact-header">
+      <span class="contact-section-label">Stupite u kontakt &nbsp;·&nbsp; FK Turbina</span>
+      <h2 class="contact-headline">KONTAKTIRAJTE NAS</h2>
+    </header>
+ 
+    <div class="contact-real-wrapper">
+ 
+      <div class="form">
+        <form action="">
+          <div class="field-group">
+            <label for="name">Ime i prezime</label>
+            <input type="text" id="name" placeholder="Vaše ime i prezime" autocomplete="name">
+          </div>
+          <div class="field-group">
+            <label for="email">Email adresa</label>
+            <input type="email" id="email" placeholder="vas@email.com" autocomplete="email">
+          </div>
+          <div class="field-group">
+            <label for="message">Vaša poruka</label>
+            <textarea id="message" placeholder="Napišite vašu poruku..."></textarea>
+          </div>
+          <button type="submit" class="contact-submit">
+            Pošalji poruku
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+ 
+      <div class="info">
+        <div class="info-header">
+          <span class="info-tag">Informacije</span>
+          <h3 class="info-title">Pronađite nas</h3>
+          <p class="info-desc">Slobodno nas kontaktirajte za sva pitanja vezana za klub, treninge ili sponzorstva.</p>
+        </div>
+ 
+        <div class="info-items">
+          <div class="info-item">
+            <span class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+            </span>
+            <div class="info-text">
+              <span class="info-label">Telefon</span>
+              <span class="info-value">033-111-111</span>
+            </div>
+          </div>
+ 
+          <div class="info-item">
+            <span class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"/></svg>
+            </span>
+            <div class="info-text">
+              <span class="info-label">Email</span>
+              <span class="info-value"><a href=""><span class="__cf_email__" data-cfemail="99f0f7fff6d9fff2edecebfbf0f7f8b7fbf8">example@gmail.com</span></a></span>
+            </div>
+          </div>
+ 
+          <div class="info-item">
+            <span class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>
+            </span>
+            <div class="info-text">
+              <span class="info-label">Adresa</span>
+              <span class="info-value">Željeznička bb, Jablanica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    
+    </div>
+      <div class="facebook" >
+        <h2>ZAPRATITE NAS NA FACEBOOKU ZA VIŠE NOVOSTI:</h2>
+        <a target="_blank" aria-label="Facebook Link" href="https://facebook.com/FkTurbinaJablanica"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg></a>
+      </div>
+  </div>
+</section>
+
+{% endblock %}

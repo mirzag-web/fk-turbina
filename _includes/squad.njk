@@ -1,0 +1,36 @@
+<section class="squad-wrapper" id="team">
+  <div class="squad-section">
+ 
+    <header class="squad-header">
+      <div class="squad-header-left">
+        <span class="section-eyebrow">PRVI TIM &nbsp;·&nbsp; 2025/26</span>
+        <h2>EKIPA</h2>
+      </div>
+      <span class="squad-season-tag">Sezona 2025 / 26</span>
+    </header>
+ 
+    <div class="squad-grid">
+ 
+      {# 
+        FOR PETLJA — ovo je srž cijelog sistema
+        "player" je privremena varijabla za svaki element iz "players" niza
+        Eleventy prolazi kroz players.json i za svakog igrača generiše jednu karticu
+      #}
+      {% for player in players %}
+      <div class="player-card">
+        <img class="player-photo"
+          src="{{ player.photo }}"
+          width="768" height="1055" loading="lazy"
+          alt="{{ player.name }}" />
+        <div class="side-accent"></div>
+        <div class="player-info">
+          <span class="player-number">{{ player.number }}</span>
+          <div class="player-name">{{ player.name }}</div>
+          <div class="player-position">{{ player.position }}</div>
+        </div>
+      </div>
+      {% endfor %}
+ 
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>FK Turbina Jablanica</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  {# Ovdje idu svi tvoji <meta> tagovi, <link rel="preload">, itd. — kopiraj ih direktno iz index.html #}
+  
+  <link rel='stylesheet' type='text/css' media='screen' href='/style.css'>
+  <link rel="icon" type="image/png" href="/assets/img/logo.png">
+  <script defer src='/script.js'></script>
+</head>
+<body>
+
+  {# Navigacija — kopiraj direktno iz index.html #}
+  <header class="site-header">
+    <nav class="top-navbar">
+      <div class="navbar-brand">
+        <a href="/"><img src="/assets/img/logo.png" width="1024" height="1024" alt="Logo FK Turbina" class="team-badge"></a>
+        <a href="/"><span class="team-name">FK TURBINA JABLANICA</span></a>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">O KLUBU</a></li>
+        <li><a href="https://www.nsfbih.ba/takmicenja/druga-liga-fbih-jug" target="_blank" class="nav-link">RASPORED</a></li>
+        <li><a href="#team" class="nav-link">TIM</a></li>
+        <li><a href="#kontakt" class="nav-link">KONTAKT</a></li>
+      </ul>
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-nav-link">O KLUBU</a></li>
+      <li><a href="https://www.nsfbih.ba/takmicenja/druga-liga-fbih-jug" target="_blank" class="mobile-nav-link">RASPORED</a></li>
+      <li><a href="#team" class="mobile-nav-link">TIM</a></li>
+      <li><a href="#kontakt" class="mobile-nav-link">KONTAKT</a></li>
+    </ul>
+  </div>
+
+  {# 
+    "content" je ključna riječ — ovdje Eleventy umetne sadržaj svake stranice.
+    block/endblock sintaksa je standard za Nunjucks template nasljeđivanje.
+  #}
+  {% block content %}{% endblock %}
+
+  {# Footer — kopiraj direktno iz index.html #}
+  <footer>
+    <p>2026&copy; FK Turbina Jablanica</p>
+    <p class="author">Web Design by: <a href="">Mirza G.</a></p>
+    <p><a href="#home">Nazad na vrh &#8593;</a></p>
+  </footer>
+
+</body>
+</html>
