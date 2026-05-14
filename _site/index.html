@@ -11,6 +11,8 @@
   <link rel='stylesheet' type='text/css' media='screen' href='/style.css'>
   <link rel="icon" type="image/png" href="/assets/img/logo.png">
   <script defer src='/script.js'></script>
+  <!-- Netlify Identity widget — potrebno za CMS login -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -521,6 +523,16 @@
     <p class="author">Web Design by: <a href="">Mirza G.</a></p>
     <p><a href="#home">Nazad na vrh &#8593;</a></p>
   </footer>
-
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
